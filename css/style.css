@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {display: block;}
+
+/* Beberapa variabel yang akan saya gunakan nanti */
+:root {
+    /* font variabel */
+    --MONTSERRATFONT: 'Hind', sans-serif;
+    --HINDFONT: 'Montserrat Alternates', sans-serif;
+
+    /* color variabel */
+    --COLOR1: #B40D1A;
+    --COLOR2: #C7141A;
+    --COLOR3: #F2ECE9;
+    --COLOR4: #FFFFFF;
+}
+
+body {
+    width: 100%;
+    background-color: var(--COLOR3);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.judul-container {
+    width: 80%;
+    padding: 1.5rem;
+    border: 1px solid black;
+
+}
+
+#main-img {
+    width: 100%;
+    height: min(400px, 75vh);
+    object-fit: cover;
+    object-position: bottom center;
+}
