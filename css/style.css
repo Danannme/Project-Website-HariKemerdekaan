@@ -1,3 +1,6 @@
+/* import font dari goole */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +13,7 @@ img {display: block;}
 :root {
     /* font variabel */
     --MONTSERRATFONT: 'Hind', sans-serif;
-    --HINDFONT: 'Montserrat Alternates', sans-serif;
+    --HINDFONT: 'Montserrat', sans-serif;
 
     /* color variabel */
     --COLOR1: #B40D1A;
@@ -24,23 +27,64 @@ body {
     background-color: var(--COLOR3);
 }
 
+/* CSS BAGIAN JUDUL */
+/* header container*/
 header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: min(1.1rem, 4vw);
 }
-
+/* judul container */
 .judul-container {
-    width: 80%;
-    padding: 1.5rem;
-    border: 1px solid black;
-
+    width: min(95%, 800px);
+    padding: 1.5rem 2.5rem 0 2.5rem;
+    /* border: 1px solid black; */
 }
-
+/* bagian judul */
+.judul-container h1 {
+    font-family: var(--HINDFONT);
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+}
+/* bagian tanggal yang ada di bawah judul */
+#tanggal {
+    display: block;
+    width: min(95%, 800px);
+    padding-left: 2.5rem;
+    font-family: var(--HINDFONT);
+    font-size: clamp(.8rem, 1.2vh, 1.6rem)
+}
+/* gambar utama yang ada di dalam header */
 #main-img {
     width: 100%;
-    height: min(400px, 75vh);
+    margin-bottom: 1.5rem;
+    height: min(400px, 65vh);
     object-fit: cover;
     object-position: bottom center;
+}
+
+/* CSS BAGIAN MAIN */
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    
+}
+
+.pembukaan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pembukaan p {
+    font-family: var(--MONTSERRATFONT);
+}
+
+.all-img-content {
+    width: 100%;
 }
